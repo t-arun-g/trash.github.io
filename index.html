@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Email's Experiment</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+
+
+<body>
+
+<h1 style="text-align: center; font-family:Aileron,Verdana, Arial, Helvetica, sans-serif; color: white; padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;">EMAIL TO GO </h1>
+
+
+<div class="topnav">
+  <a href="https://www.iitk.ac.in/counsel/index.php" style="font-family:Calibri;font-weight: bold;" >CS-IITK</a>
+  <a href="https://www.iitk.ac.in/counsel/team.php">Team</a>
+  <a href="#">Services</a>
+  <a href="#">Appointments</a>
+  <a href="#">Support</a>
+  <a href="#">Info for Students</a>
+  <a href="#">Selfhelp</a>
+  <a href="#">Emergency</a>
+</div>
+
+
+<?php     
+$to_email = 'gtarung1234@gmail.com';
+$subject = 'Testing PHP Mail';
+$message = 'This mail is sent using the PHP mail function';
+$headers = 'From: noreply @ company. com';
+mail($to_email,$subject,$message,$headers);
+?>
+</body>
+</html>
